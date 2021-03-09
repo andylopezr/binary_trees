@@ -1,7 +1,5 @@
 # Binary Trees
 <img src="https://dz2cdn1.dzone.com/storage/temp/14015549-binary-tree.png">
----
-## Project Details
 
 ### Description
 
