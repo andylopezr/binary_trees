@@ -92,6 +92,9 @@ int binary_tree_is_full(const binary_tree_t *tree);
 /* 16. Checks if a binary tree is perfect. - - - - - - - - - - - - - - - - - */
 int binary_tree_is_perfect(const binary_tree_t *tree);
 
+/* 16.1 Measures the height of a binary tree. - - - - - - - - - - - - - - - -*/
+size_t perfect_tree_height(const binary_tree_t *tree);
+
 /* 17. Finds the sibling of a node. - - - - - - - - - - - - - - - - - - - - -*/
 binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 
@@ -104,6 +107,9 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 
 /* 20. Goes through a binary tree using level-order traversal.- - - - - - - -*/
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
+
+/* 20.1 Measures the height of a binary tree. - - - - - - - - - - - - - - - -*/
+size_t level_tree_height(const binary_tree_t *tree);
 
 /* 21. Checks if a binary tree is complete. - - - - - - - - - - - - - - - - -*/
 int binary_tree_is_complete(const binary_tree_t *tree);
