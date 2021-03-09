@@ -13,7 +13,7 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 	binary_tree_t *ancestor;
 
 	if (!first || !second)
-		return (1);
+		return (NULL);
 	ancestor = (binary_tree_t *)second;
 	while (first)
 	{
