@@ -98,4 +98,65 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 /* 18. Finds the uncle of a node. - - - - - - - - - - - - - - - - - - - - - -*/
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 
+/* 19. Finds the lowest common ancestor of two nodes. - - - - - - - - - - - -*/
+binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
+				     const binary_tree_t *second);
+
+/* 20. Goes through a binary tree using level-order traversal.- - - - - - - -*/
+void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
+
+/* 21. Checks if a binary tree is complete. - - - - - - - - - - - - - - - - -*/
+int binary_tree_is_complete(const binary_tree_t *tree);
+
+/* 22. Performs a left-rotation on a binary tree. - - - - - - - - - - - - - -*/
+binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
+
+/* 23. Performs a right-rotation on a binary tree. - - - - - - - - - - - - - */
+binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
+
+/* 24. Checks if a binary tree is a valid. - - - - - - - - - - - - - - - - - */
+int binary_tree_is_bst(const binary_tree_t *tree);
+
+/* 25. Inserts a value in a Binary Search Tree. - - - - - - - - - - - - - - -*/
+bst_t *bst_insert(bst_t **tree, int value);
+
+/* 26. Builds a Binary Search Tree from an array. - - - - - - - - - - - - - -*/
+bst_t *array_to_bst(int *array, size_t size);
+
+/* 27. Searches for a value in a Binary Search Tree. - - - - - - - - - - - - */
+bst_t *bst_search(const bst_t *tree, int value);
+
+/* 28. Removes a node from a Binary Search Tree. - - - - - - - - - - - - - - */
+bst_t *bst_remove(bst_t *root, int value);
+
+/* 30. Checks if a binary tree is a valid AVL Tree. - - - - - - - - - - - - -*/
+int binary_tree_is_avl(const binary_tree_t *tree);
+
+/* 31. Inserts a value in an AVL Tree. - - - - - - - - - - - - - - - - - - - */
+avl_t *avl_insert(avl_t **tree, int value);
+
+/* 32. Builds an AVL tree from an array. - - - - - - - - - - - - - - - - - - */
+avl_t *array_to_avl(int *array, size_t size);
+
+/* 33. Removes a node from an AVL tree.- - - - - - - - - - - - - - - - - - - */
+avl_t *avl_remove(avl_t *root, int value);
+
+/* 34. Builds an AVL tree from an array. - - - - - - - - - - - - - - - - - - */
+avl_t *sorted_array_to_avl(int *array, size_t size);
+
+/* 36. Checks if a binary tree is a valid Max Binary Heap. - - - - - - - - - */
+int binary_tree_is_heap(const binary_tree_t *tree);
+
+/* 37. Inserts a value in Max Binary Heap. - - - - - - - - - - - - - - - - - */
+heap_t *heap_insert(heap_t **root, int value);
+
+/* 38. Builds a Max Binary Heap tree from an array. - - - - - - - - - - - - -*/
+heap_t *array_to_heap(int *array, size_t size);
+
+/* 39. Extracts the root node of a Max Binary Heap. - - - - - - - - - - - - -*/
+int heap_extract(heap_t **root);
+
+/* 40. Converts a Binary Max Heap to a sorted array of integers. - - - - - - */
+int *heap_to_sorted_array(heap_t *heap, size_t *size);
+
 #endif /*_BINARY_TREES_H_*/
