@@ -1,5 +1,5 @@
 # Binary Trees
-<img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d1d0ff7b-8e48-4a69-be29-9418cd0aa252/ddsvap1-5ad9981d-c4be-4275-847d-05c0ed117aff.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZDFkMGZmN2ItOGU0OC00YTY5LWJlMjktOTQxOGNkMGFhMjUyXC9kZHN2YXAxLTVhZDk5ODFkLWM0YmUtNDI3NS04NDdkLTA1YzBlZDExN2FmZi5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.oOzO193F8bJCNSlyknHklImFOE2LFWFg4jFt2aN71u4">
+<img src="https://dz2cdn1.dzone.com/storage/temp/14015549-binary-tree.png">
 ---
 ## Project Details
 
