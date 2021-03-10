@@ -31,10 +31,8 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 		/* Assing next node's parent as new_node. */
 		new_node->left->parent = new_node;
 	}
-	/* When parent exists. */
-	if (new_node->parent)
-		/* Assign the parent's left node. */
-		parent->left = new_node;
+	/* Assign the parent's left node. */
+	parent->left = new_node;
 	new_node->n = value;
 
 	return (new_node);
