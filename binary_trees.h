@@ -118,6 +118,12 @@ void print_tree_level(const binary_tree_t *tree, size_t level,
 /* 21. Checks if a binary tree is complete. - - - - - - - - - - - - - - - - -*/
 int binary_tree_is_complete(const binary_tree_t *tree);
 
+/* 21.1 Recursive auxiliary function to check if complete binary tree.- - - -*/
+int complete_recursion(const binary_tree_t *tree, size_t index, size_t nodes);
+
+/* 21.2 Counts the nodes inside aq binary tree. - - - - - - - - - - - - - - -*/
+size_t count_nodes(const binary_tree_t *tree);
+
 /* 22. Performs a left-rotation on a binary tree. - - - - - - - - - - - - - -*/
 binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
 
