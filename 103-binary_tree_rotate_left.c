@@ -20,7 +20,7 @@ binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree)
 		tree->parent->left = tree;
 		/* Moves the tree pointer upward. */
 		tree = tree->parent;
-		/* Sets the NULL parent piointer again. */
+		/* Sets the NULL parent pointer again. */
 		tree->parent = NULL;
 	}
 	return (tree);

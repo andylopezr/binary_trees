@@ -16,11 +16,11 @@ binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree)
 	{
 		/* Brings the left side of the right node. */
 		tree->left = tree->parent->right;
-		/* Assigns left side of new root. */
+		/* Assigns right side of new root. */
 		tree->parent->right = tree;
 		/* Moves the tree pointer upward. */
 		tree = tree->parent;
-		/* Sets the NULL parent piointer again. */
+		/* Sets the NULL parent pointer again. */
 		tree->parent = NULL;
 	}
 	return (tree);
