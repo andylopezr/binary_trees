@@ -111,6 +111,10 @@ void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
 /* 20.1 Measures the height of a binary tree. - - - - - - - - - - - - - - - -*/
 size_t level_tree_height(const binary_tree_t *tree);
 
+/* 20.2 Prints the tree based on a level from a binary tree.- - - - - - - - -*/
+void print_tree_level(const binary_tree_t *tree, size_t level,
+		      void (*func)(int));
+
 /* 21. Checks if a binary tree is complete. - - - - - - - - - - - - - - - - -*/
 int binary_tree_is_complete(const binary_tree_t *tree);
 
