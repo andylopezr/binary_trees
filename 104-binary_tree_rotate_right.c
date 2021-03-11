@@ -16,6 +16,8 @@ binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree)
 	{
 		/* Brings the left side of the right node. */
 		tree->left = tree->parent->right;
+		if (tree->parent->right)
+			tree->parent->right->parent = tree;
 		/* Assigns right side of new root. */
 		tree->parent->right = tree;
 		/* Moves the tree pointer upward. */
