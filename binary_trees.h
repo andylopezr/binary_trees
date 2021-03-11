@@ -2,6 +2,7 @@
 #define _BINARY_TREES_H_
 
 #include <stdlib.h>
+#include <limits.h>
 
 /*---------------------------------------------------------------------------*/
 /*                    Given Structures and Functions.                        */
@@ -132,6 +133,9 @@ binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
 
 /* 24. Checks if a binary tree is a valid. - - - - - - - - - - - - - - - - - */
 int binary_tree_is_bst(const binary_tree_t *tree);
+
+/* 24.1 Checks if a binary tree is a valid. - - - - - - - - - - - - - - - - -*/
+int bst_helper(const binary_tree_t *tree, int lesser, int greater);
 
 /* 25. Inserts a value in a Binary Search Tree. - - - - - - - - - - - - - - -*/
 bst_t *bst_insert(bst_t **tree, int value);
