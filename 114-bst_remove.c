@@ -18,10 +18,8 @@ bst_t *bst_remove(bst_t *root, int value)
 		return (root);
 	if (leaf->left && !leaf->right)
 	{
-		/* temp = leaf->left; */
-		/* while (temp->right) */
-		/* 	temp = temp->right; */
-		for (temp = leaf->left; temp->right; temp = temp->right);
+		for (temp = leaf->left; temp->right; temp = temp->right)
+			;
 		if (temp != leaf->left)
 		{
 			temp->parent->right = temp->left;
@@ -31,10 +29,8 @@ bst_t *bst_remove(bst_t *root, int value)
 	}
 	else if (leaf->right)
 	{
-		/* temp = leaf->right; */
-		/* while (temp->left) */
-		/* 	temp = temp->left; */
-		for (temp = leaf->right; temp->left; temp = temp->left);
+		for (temp = leaf->right; temp->left; temp = temp->left)
+			;
 		if (temp != leaf->right)
 		{
 			temp->parent->left = temp->right;
@@ -55,7 +51,6 @@ bst_t *bst_remove(bst_t *root, int value)
 		return (temp);
 	return (root);
 }
-
 /**
  * bst_search - Searches for a value in a Binary Search Tree.
  *
