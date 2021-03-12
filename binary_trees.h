@@ -143,6 +143,9 @@ bst_t *bst_insert(bst_t **tree, int value);
 /* 26. Builds a Binary Search Tree from an array. - - - - - - - - - - - - - -*/
 bst_t *array_to_bst(int *array, size_t size);
 
+/* 26.1 Builds an array from a BST.- - - - - - - - - - - - - - - - - - - - - */
+int *bst_to_array(bst_t *root, int value, int *array);
+
 /* 27. Searches for a value in a Binary Search Tree. - - - - - - - - - - - - */
 bst_t *bst_search(const bst_t *tree, int value);
 
