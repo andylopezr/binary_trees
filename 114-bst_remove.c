@@ -1,10 +1,6 @@
 #include "binary_trees.h"
 /**
-<<<<<<< HEAD
- * bst_remove - Searches for a value in a Binary Search Tree.
-=======
  * bst_remove - Removes a node from a BST.
->>>>>>> 3bf29114fe5902114c5317df5e6867394547c786
  *
  *  Arguments:
  *    @root:  - Pointer to the BST to analyze.
@@ -22,15 +18,10 @@ bst_t *bst_remove(bst_t *root, int value)
 		return (root);
 	if (leaf->left && !leaf->right)
 	{
-<<<<<<< HEAD
-		for (temp = leaf->left; temp->right; temp = temp->right)
-			;
-=======
 		/* temp = leaf->left; */
 		/* while (temp->right) */
 		/* 	temp = temp->right; */
 		for (temp = leaf->left; temp->right; temp = temp->right);
->>>>>>> 3bf29114fe5902114c5317df5e6867394547c786
 		if (temp != leaf->left)
 		{
 			temp->parent->right = temp->left;
@@ -40,15 +31,10 @@ bst_t *bst_remove(bst_t *root, int value)
 	}
 	else if (leaf->right)
 	{
-<<<<<<< HEAD
-		for (temp = leaf->right; temp->left; temp = temp->left)
-			;
-=======
 		/* temp = leaf->right; */
 		/* while (temp->left) */
 		/* 	temp = temp->left; */
 		for (temp = leaf->right; temp->left; temp = temp->left);
->>>>>>> 3bf29114fe5902114c5317df5e6867394547c786
 		if (temp != leaf->right)
 		{
 			temp->parent->left = temp->right;
